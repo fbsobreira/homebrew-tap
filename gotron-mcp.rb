@@ -5,21 +5,21 @@
 class GotronMcp < Formula
   desc "MCP server for TRON blockchain"
   homepage "https://gotron.sh"
-  version "0.2.0"
+  version "0.3.0"
   license "LGPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.2.0/gotron-mcp_0.2.0_darwin_amd64.tar.gz"
-      sha256 "bf3a9418c1ab15022c960a25b4a49c2b65598fa443d35faaa34dd3230e0cb49c"
+      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.3.0/gotron-mcp_0.3.0_darwin_amd64.tar.gz"
+      sha256 "33ab37335f625ffa7419b04d3e350bddeebc6caaa6130ff6e4e96ed2c354f6c6"
 
       define_method(:install) do
         bin.install "gotron-mcp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.2.0/gotron-mcp_0.2.0_darwin_arm64.tar.gz"
-      sha256 "6b1fdfa3abc8001c1ac8aea23f5d61eaafc4ab1bdda046a854448d8ec7ded1cd"
+      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.3.0/gotron-mcp_0.3.0_darwin_arm64.tar.gz"
+      sha256 "189410b4c9b35e2ed2f6bdd1de83bac20fff17d6c03a378cf30ee78e48cc236e"
 
       define_method(:install) do
         bin.install "gotron-mcp"
@@ -29,15 +29,15 @@ class GotronMcp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.2.0/gotron-mcp_0.2.0_linux_amd64.tar.gz"
-      sha256 "5aa25fd32f3fdac9d584da3ad0f6c703c7914899a967ccec1a44058248b0e9a6"
+      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.3.0/gotron-mcp_0.3.0_linux_amd64.tar.gz"
+      sha256 "a30684f04bed56457c7ab475a527d2d66cb132d58307b7132240e84652817d27"
       define_method(:install) do
         bin.install "gotron-mcp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.2.0/gotron-mcp_0.2.0_linux_arm64.tar.gz"
-      sha256 "0d51a452295863382e8f26dec2082cfde1523ba8f7654ac11aaf3a1f9857c0cb"
+      url "https://github.com/fbsobreira/gotron-mcp/releases/download/v0.3.0/gotron-mcp_0.3.0_linux_arm64.tar.gz"
+      sha256 "5968fcaadf65b6c4e50d9a9851d78d647f59f742b44fcc531c4fd904d7a3d9b3"
       define_method(:install) do
         bin.install "gotron-mcp"
       end
