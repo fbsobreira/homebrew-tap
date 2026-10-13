@@ -5,21 +5,21 @@
 class Tronctl < Formula
   desc "Go SDK & CLI for TRON blockchain"
   homepage "https://gotron.sh"
-  version "0.26.0"
+  version "0.27.0"
   license "LGPL-3.0-or-later"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.26.0/tronctl_0.26.0_darwin_amd64.tar.gz"
-      sha256 "16056de9e1c2d0bb6b09816b3548760a89c2009d95ed2db8f27a4e0de89625aa"
+      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.27.0/tronctl_0.27.0_darwin_amd64.tar.gz"
+      sha256 "941af586f38a4da07a59e4e737b3daeca5c950ce4059dd54f25ea194868ac5f3"
 
       define_method(:install) do
         bin.install "tronctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.26.0/tronctl_0.26.0_darwin_arm64.tar.gz"
-      sha256 "4720e2b181ee07f6a0cf0f934a5272efa81e1cf959e1a40a6fd04441d310e86c"
+      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.27.0/tronctl_0.27.0_darwin_arm64.tar.gz"
+      sha256 "15e22aedd400e81ff7ec0880fb2217c010ceee0d3aeaa26965a783edd7829acf"
 
       define_method(:install) do
         bin.install "tronctl"
@@ -29,15 +29,15 @@ class Tronctl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.26.0/tronctl_0.26.0_linux_amd64.tar.gz"
-      sha256 "cf66bc55cd63708686e28a84de0c7a1adfbcab40c27bf2587d04cbf3926f5284"
+      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.27.0/tronctl_0.27.0_linux_amd64.tar.gz"
+      sha256 "63b013227654e92e8219c24222f96786ecc0ba38af582361b09dcdbf9a9277f8"
       define_method(:install) do
         bin.install "tronctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.26.0/tronctl_0.26.0_linux_arm64.tar.gz"
-      sha256 "c9c46c3b1cac68fda2d8cee868da76ea155fe5efaaedf59fe67451e8f018d422"
+      url "https://github.com/fbsobreira/gotron-sdk/releases/download/v0.27.0/tronctl_0.27.0_linux_arm64.tar.gz"
+      sha256 "f0f554168fe68d7a3964576583766eb0caf3543a7a05e8bb5fabeed1116bf871"
       define_method(:install) do
         bin.install "tronctl"
       end
